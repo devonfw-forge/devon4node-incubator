@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "extends": "@nestjs/schematics",
+  "schematics": {
+    "devon4node-application": {
+      "description": "Create a devon4node application.",
+      "factory": "./devon4node-application/index#devon4nodeApplication",
+      "schema": "./devon4node-application/schema.json"
+    },
+    "init-typeorm": {
+      "description": "Initialice typeorm into your current project in a correct way.",
+      "factory": "./init-typeorm/index",
+      "schema": "./init-typeorm/schema.json"
+    }
+  }
+}
