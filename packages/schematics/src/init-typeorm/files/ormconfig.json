@@ -1,10 +1,37 @@
-{
+{<% if (db === 'mysql') { %>
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "test",
+    "password": "test",
+    "database": "test",<% } %><% if (db === 'mariadb') { %>
+    "type": "mariadb",
+    "host": "localhost",
+    "port": 3306,
+    "username": "test",
+    "password": "test",
+    "database": "test",<% } %><% if (db === 'sqlite') { %>
+    "type": "sqlite",
+    "database": "database.sqlite",<% } %><% if (db === 'postgres') { %>
     "type": "postgres",
     "host": "localhost",
     "port": 5432,
     "username": "test",
     "password": "test",
-    "database": "test",
+    "database": "test",<% } %><% if (db === 'mssql') { %>
+    "type": "mssql",
+    "host": "localhost",
+    "username": "sa",
+    "password": "Admin12345",
+    "database": "tempdb",<% } %><% if (db === 'oracle') { %>
+    "type": "oracle",
+    "host": "localhost",
+    "port": 1521,
+    "username": "system",
+    "password": "oracle",
+    "sid": "xe.oracle.docker",<% } %><% if (db === 'mongodb') { %>
+    "type": "mongodb",
+    "database": "test",<% } %>
     "synchronize": true,
     "logging": false,
     "entities": [

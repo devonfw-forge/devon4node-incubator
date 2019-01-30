@@ -6,7 +6,7 @@ src/**/*.d.ts
 # IDEs
 .idea/
 jsconfig.json
-.vscode/
+.vscode/*
 !.vscode/launch.json
 
 # Misc

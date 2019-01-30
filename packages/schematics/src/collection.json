@@ -9,7 +9,7 @@
     },
     "init-typeorm": {
       "description": "Initialice typeorm into your current project in a correct way.",
-      "factory": "./init-typeorm/index",
+      "factory": "./init-typeorm/index#initTypeorm",
       "schema": "./init-typeorm/schema.json"
     }
   }

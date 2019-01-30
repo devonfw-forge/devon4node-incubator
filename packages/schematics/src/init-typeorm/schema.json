@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "InitTypeormSchematic",
+    "title": "Init Typeorm Schema",
+    "type": "object",
+    "properties": {
+        "db": {
+            "type": "string",
+            "enum": ["postgres",
+                "mariadb",
+                "mysql",
+                "sqlite3",
+                "oracledb",
+                "mssql",
+                "mongodb"
+            ]
+        }
+    },
+    "required": [
+        "db"
+    ]
+}
