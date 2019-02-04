@@ -4,13 +4,18 @@
   "schematics": {
     "devon4node-application": {
       "description": "Create a devon4node application.",
-      "factory": "./devon4node-application/index#devon4nodeApplication",
-      "schema": "./devon4node-application/schema.json"
+      "factory": "./lib/devon4node-application/index#devon4nodeApplication",
+      "schema": "./lib/devon4node-application/schema.json"
     },
     "init-typeorm": {
       "description": "Initialice typeorm into your current project in a correct way.",
-      "factory": "./init-typeorm/index#initTypeorm",
-      "schema": "./init-typeorm/schema.json"
+      "factory": "./lib/init-typeorm/index#initTypeorm",
+      "schema": "./lib/init-typeorm/schema.json"
+    },
+    "config-module": {
+      "description": "Add the config module to the project.",
+      "factory": "./lib/config-module/index#initTypeorm",
+      "schema": "./lib/config-module/schema.json"
     }
   }
 }

@@ -1,25 +1,26 @@
 {
   "name": "@devon4node/schematics",
-  "version": "0.0.0",
-  "description": "A blank schematics",
+  "version": "0.0.1",
+  "description": "Schematics for devon4node",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js",
     "rm": "rm -r src/**/*.js && rm -r src/**/*.d.ts && rm -r src/**/*.js.map"
   },
   "keywords": [
-    "schematics"
+    "schematics", "nestjs"
   ],
-  "author": "",
-  "license": "MIT",
+  "author": "Dario Rodriguez Gonzalez <dario.rodriguez-gonzalez@capgemini.com>",
+  "license": "Apache2",
   "schematics": "./src/collection.json",
   "dependencies": {
-    "@nestjs/schematics": "^5.11.2"
+    "@nestjs/schematics": "^5.11.2",
+    "@schematics/angular": "^7.2.3"
   },
   "devDependencies": {
-    "@angular-devkit/schematics-cli": "^0.12.3",
     "@angular-devkit/core": "^7.2.3",
     "@angular-devkit/schematics": "^7.2.3",
+    "@angular-devkit/schematics-cli": "^0.12.3",
     "@types/jasmine": "^2.6.0",
     "@types/node": "^8.0.31",
     "jasmine": "^2.8.0",
