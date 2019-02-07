@@ -14,8 +14,11 @@
     },
     "config-module": {
       "description": "Add the config module to the project.",
-      "factory": "./lib/config-module/index#initTypeorm",
-      "schema": "./lib/config-module/schema.json"
+      "factory": "./lib/config-module/index#configModule"
+    },
+    "auth-jwt": {
+      "description": "Add the auth JWT module to the project.",
+      "factory": "./lib/auth-jwt/index#authJWT"
     }
   }
 }

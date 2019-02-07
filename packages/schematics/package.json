@@ -11,7 +11,7 @@
     "schematics", "nestjs"
   ],
   "author": "Dario Rodriguez Gonzalez <dario.rodriguez-gonzalez@capgemini.com>",
-  "license": "Apache2",
+  "license": "Apache-2.0",
   "schematics": "./src/collection.json",
   "dependencies": {
     "@nestjs/schematics": "^5.11.2",
